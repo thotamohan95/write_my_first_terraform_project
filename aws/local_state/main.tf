@@ -23,6 +23,15 @@ resource "aws_instance" "app_server" {
   }
 }
 
+# Create S3 Bucket
+terraform {
+  backend "s3" {
+  bucket = "mohan_devops_Demo_2026"
+  key = "development/service-name.tfstate"
+  region = "us-east-1"
+  use_lockfile = true
+ }
+}
 
 # Commands to run the Terraform scripts.
 # terraform init
