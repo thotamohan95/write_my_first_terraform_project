@@ -15,6 +15,8 @@ The typical Terraform lifecycle is:
 5. Apply the plan.
 6. Inspect or destroy the managed infrastructure when it is no longer needed.
 
+<img width="972" height="305" alt="image" src="https://github.com/user-attachments/assets/c10034d5-4efc-4052-bffd-37a1d47a7de8" />
+
 ## Project Structure
 
 ```text
