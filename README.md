@@ -1,16 +1,16 @@
-Terraform
+**Terraform**
 
 Infrastructure as Code (IaC) using Terraform.
 
 This repository contains Terraform concepts, examples, configurations, and best practices for learning and managing infrastructure as code.
 
-📌 What is Terraform?
+📌 **What is Terraform?**
 
 Terraform is an Infrastructure as Code (IaC) tool that allows you to define, provision, and manage infrastructure using configuration files.
 
 Terraform follows a declarative approach where you describe the desired state of your infrastructure, and Terraform determines the changes required to achieve that state.
 
-High-Level Architecture
+**High-Level Architecture**
                  Terraform
                      |
                      v
@@ -39,7 +39,7 @@ Datadog
 
 Many other services
 
-🚀 Terraform Workflow
+🚀 **Terraform Workflow**
 
 The basic Terraform workflow is:
 
@@ -55,8 +55,8 @@ Apply
   ↓
 Infrastructure
 
-Core Commands
-Command	Purpose
+**Core Commands**
+**Command	Purpose**
 terraform init	Initialize the Terraform working directory
 terraform fmt	Format Terraform configuration
 terraform validate	Validate Terraform configuration
@@ -65,7 +65,7 @@ terraform apply	Apply infrastructure changes
 terraform show	Display Terraform state or plan information
 terraform state list	List resources tracked in state
 terraform destroy	Destroy managed infrastructure
-📂 Repository Structure
+📂** Repository Structure**
 
 A typical Terraform project can be organized as:
 
@@ -92,11 +92,11 @@ terraform/
 
 The exact structure can vary depending on the project and architecture.
 
-🧩 Core Terraform Concepts
+🧩 **Core Terraform Concepts**
 
 This repository covers the following Terraform concepts:
 
-Configuration
+**Configuration**
 
 Terraform configuration is written using .tf files.
 
@@ -105,7 +105,7 @@ variables.tf
 outputs.tf
 providers.tf
 
-Providers
+**Providers**
 
 Providers allow Terraform to communicate with external platforms and APIs.
 
@@ -117,7 +117,7 @@ API
     ↓
 Infrastructure
 
-Resources
+**Resources**
 
 Resources represent infrastructure objects that Terraform manages.
 
@@ -128,15 +128,15 @@ resource "aws_instance" "example" {
   instance_type = "t2.micro"
 }
 
-Variables
+**Variables**
 
 Variables allow Terraform configurations to accept reusable input values.
 
-Outputs
+**Outputs**
 
 Outputs expose useful information from Terraform configurations.
 
-State
+**State**
 
 Terraform state tracks information about resources managed by Terraform.
 
@@ -146,7 +146,7 @@ Terraform Configuration
           ↓
   Managed Infrastructure
 
-Modules
+**Modules**
 
 Modules allow Terraform configurations to be organized and reused.
 
@@ -160,7 +160,7 @@ Terraform Project
       |
       └── Security Module
 
-🔄 Terraform State
+🔄 **Terraform State**
 
 Terraform uses state to maintain information about infrastructure it manages.
 
@@ -173,7 +173,7 @@ For team environments, Terraform state is commonly stored using a remote backend
 
 ⚠️ Terraform state may contain sensitive information. Protect state files and avoid committing sensitive state files to Git repositories.
 
-🧱 Infrastructure as Code
+🧱** Infrastructure as Code**
 
 Terraform allows infrastructure to be managed using the same principles commonly used for application code.
 
@@ -206,7 +206,7 @@ Consistency
 
 Change visibility
 
-🌍 Environments
+🌍 **Environments**
 
 Terraform can be used to manage multiple environments.
 
@@ -219,7 +219,7 @@ Terraform can be used to manage multiple environments.
 
 Environment-specific configuration can be organized according to the requirements of the project.
 
-🧩 Terraform Modules
+🧩 **Terraform Modules**
 
 Modules help create reusable infrastructure components.
 
@@ -235,7 +235,7 @@ modules/
 
 A module can be reused across multiple environments or projects.
 
-🔐 Best Practices
+🔐** Best Practices**
 
 Some important Terraform practices include:
 
@@ -263,7 +263,7 @@ Keep secrets out of Terraform configuration and source control.
 
 Use separate environments carefully for development, staging, and production.
 
-⚠️ Configuration Drift
+⚠️** Configuration Drift**
 
 Configuration drift can occur when infrastructure is changed outside Terraform.
 
@@ -279,7 +279,7 @@ Terraform Configuration
 
 Regular Terraform planning and appropriate operational controls can help identify differences between the desired configuration and the infrastructure.
 
-🔄 Terraform and GitOps
+🔄** Terraform and GitOps**
 
 Terraform and Kubernetes GitOps tools such as Flux and Argo CD can be used for different purposes.
 
@@ -305,7 +305,7 @@ Applications
 
 Depending on the architecture, Terraform and GitOps tools can complement each other.
 
-📖 Learning Path
+📖** Learning Path**
 
 A recommended Terraform learning path:
 
@@ -335,7 +335,7 @@ CI/CD
        ↓
 Infrastructure Automation
 
-🛠️ Getting Started
+🛠️ **Getting Started**
 1. Install Terraform
 
 Verify the installation:
@@ -366,7 +366,7 @@ terraform destroy
 
 ⚠️ terraform destroy can delete real infrastructure. Use it carefully, especially in shared or production environments.
 
-📚 Repository Goals
+📚 **Repository Goals**
 
 The goal of this repository is to provide a practical Terraform learning path covering:
 
@@ -396,7 +396,7 @@ Infrastructure automation
 
 CI/CD integration
 
-🎯 Terraform in One Diagram
+🎯 **Terraform in One Diagram**
                     ┌───────────────┐
                     │     Git       │
                     └───────┬───────┘
@@ -439,7 +439,7 @@ CI/CD integration
                     │ Infrastructure│
                     └───────────────┘
 
-📝 Quick Reference
+📝 **Quick Reference**
 terraform init       → Initialize
 terraform fmt        → Format
 terraform validate   → Validate
@@ -449,7 +449,7 @@ terraform show       → Inspect
 terraform state list → List resources
 terraform destroy    → Remove
 
-📌 Summary
+📌 **Summary**
 
 Terraform provides a declarative approach to managing infrastructure as code.
 
