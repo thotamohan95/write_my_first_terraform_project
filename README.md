@@ -5,7 +5,7 @@ A small Terraform project for learning the Terraform workflow with AWS. The curr
 ## What Is Terraform?
 
 Terraform is an infrastructure-as-code tool. Infrastructure is described in configuration files, and Terraform uses those files to plan and apply changes through cloud provider APIs.
-
+<img width="966" height="761" alt="image" src="https://github.com/user-attachments/assets/377a4770-43d5-49a6-92b2-916488350023" />
 The typical Terraform lifecycle is:
 
 1. Write configuration.
@@ -14,9 +14,7 @@ The typical Terraform lifecycle is:
 4. Review the execution plan.
 5. Apply the plan.
 6. Inspect or destroy the managed infrastructure when it is no longer needed.
-
 <img width="972" height="305" alt="image" src="https://github.com/user-attachments/assets/c10034d5-4efc-4052-bffd-37a1d47a7de8" />
-
 ## Project Structure
 
 ```text
